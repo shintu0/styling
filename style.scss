@@ -19,3 +19,17 @@ h1{
         cursor: pointer;
     }
 }
+
+.main {
+    padding: 0.9rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: rgb(16, 68, 236);
+
+    #{&}_paragraph{
+        font-weight: map-get($fonts, medium);
+    }
+  
+    
+  }

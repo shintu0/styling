@@ -18,6 +18,14 @@ h1:hover {
   cursor: pointer;
 }
 
-
-
-/*# sourceMappingURL=style.css.map */
+.main {
+  padding: 0.9rem;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: rgb(16, 68, 236);
+}
+.main .main_paragraph {
+  font-weight: 500;
+  font-size: x-large;
+}/*# sourceMappingURL=style.css.map */
