@@ -3,4 +3,19 @@
 body{
     background-color: $background-color;
     font-weight: map-get($fonts, small);
+    color: $text-color;
+    padding: 1rem;
+    margin: 3 rem;
+}
+
+h1{
+    color: $heading-text-color;
+    text-align: center;
+    text-decoration: wavy;
+
+    &:hover{
+        color: tomato;
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }

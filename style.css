@@ -1,4 +1,23 @@
 body {
   background-color: rgb(34, 44, 46);
   font-weight: 300;
-}/*# sourceMappingURL=style.css.map */
+  color: gray;
+  padding: 1rem;
+  margin: 3 rem;
+}
+
+h1 {
+  color: rgb(248, 244, 244);
+  text-align: center;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+}
+h1:hover {
+  color: tomato;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
