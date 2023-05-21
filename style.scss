@@ -12,6 +12,13 @@
     flex-direction: $direction;
 }
 
+@mixin theme($light-theme:false){
+    @if $light-theme{
+        background-color: lighten($background-color,100%);
+        color: darken($text-color,100%);
+    }
+}
+
 body{
     background-color: $background-color;
     font-weight: map-get($fonts, small);
@@ -50,4 +57,9 @@ h1{
   .display{
     @include flex-center(row);
     font-weight: weight(small);
+  }
+
+
+  .light{
+    @include theme(true);
   }

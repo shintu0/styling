@@ -36,4 +36,9 @@ h1:hover {
   align-items: center;
   flex-direction: row;
   font-weight: 300;
+}
+
+.light {
+  background-color: white;
+  color: black;
 }/*# sourceMappingURL=style.css.map */
