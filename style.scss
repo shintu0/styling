@@ -5,6 +5,13 @@
     @return map-get($fonts, $weight-name);
 }
 
+@mixin flex-center($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
 body{
     background-color: $background-color;
     font-weight: map-get($fonts, small);
@@ -27,6 +34,7 @@ h1{
 
 .main {
     padding: 0.9rem;
+    margin: 0.3rem;
     border-radius: 1rem;
     border-style: solid;
     border-width: 0.1rem;
@@ -37,4 +45,9 @@ h1{
     }
   
     
+  }
+
+  .display{
+    @include flex-center(row);
+    font-weight: weight(small);
   }

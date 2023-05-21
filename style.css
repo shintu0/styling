@@ -20,6 +20,7 @@ h1:hover {
 
 .main {
   padding: 0.9rem;
+  margin: 0.3rem;
   border-radius: 1rem;
   border-style: solid;
   border-width: 0.1rem;
@@ -27,4 +28,12 @@ h1:hover {
 }
 .main .main_paragraph {
   font-weight: 500;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */
