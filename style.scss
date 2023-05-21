@@ -39,20 +39,7 @@ h1{
     }
 }
 
-.main {
-    padding: 0.9rem;
-    margin: 0.3rem;
-    border-radius: 1rem;
-    border-style: solid;
-    border-width: 0.1rem;
-    border-color: rgb(16, 68, 236);
 
-    #{&}_paragraph{
-        font-weight: weight(medium);
-    }
-  
-    
-  }
 
   .display{
     @include flex-center(row);
@@ -62,4 +49,28 @@ h1{
 
   .light{
     @include theme(true);
+  }
+
+
+  .main {
+    padding: 0.9rem;
+    margin: 0.3rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: rgb(16, 68, 236);
+
+    #{&}_paragraph1{
+        font-weight: weight(medium);
+        &:hover{
+            color: pink;
+        }
+    }
+
+    #{&}_paragraph2{
+        @extend .main_paragraph1;
+        &:hover{
+            color: red;
+        }
+    }
   }
