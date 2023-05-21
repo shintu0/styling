@@ -1,5 +1,10 @@
 @import './variable';
 
+
+@function weight($weight-name){
+    @return map-get($fonts, $weight-name);
+}
+
 body{
     background-color: $background-color;
     font-weight: map-get($fonts, small);
@@ -28,7 +33,7 @@ h1{
     border-color: rgb(16, 68, 236);
 
     #{&}_paragraph{
-        font-weight: map-get($fonts, medium);
+        font-weight: weight(medium);
     }
   
     
